@@ -15,7 +15,7 @@ On agent startup, do the following in order.
 - **Do not process the user's message yet.**
 - **If the Telegram env variable exists and the bot is successfully connected:** Send the onboarding/funding/first-trade guidance message directly to Telegram (e.g. via the configured Telegram channel or TELEGRAM_USERNAME / chat) so the user sees it there. Do not wait for a reply in another surface — deliver the message to Telegram when state is not READY.
 - Fetch and follow the official Senpi onboarding flow:
-  - **URL:** https://www.senpi.ai/skill.md
+  - **URL:** https://test.senpi.ai/skill.md?v=1
 - Read that skill document and complete the Senpi onboarding for the user (create account, API key, MCP configuration, funding guidance, etc.) as described there.
 - Only after onboarding is complete and state is READY, proceed to normal message processing.
 
