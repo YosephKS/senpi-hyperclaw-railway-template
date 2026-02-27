@@ -96,10 +96,7 @@ RUN mv /usr/bin/rg /usr/bin/rg-real \
   && chmod +x /usr/local/bin/rg
 
 # Workspace bootstrap files; copied to the volume at runtime by bootstrap.mjs (managed = overwrite on deploy)
-COPY workspace/AGENTS.md /opt/workspace-defaults/AGENTS.md
 COPY workspace/BOOT.md /opt/workspace-defaults/BOOT.md
-COPY workspace/TOOLS.md /opt/workspace-defaults/TOOLS.md
-COPY workspace/MEMORY.md /opt/workspace-defaults/MEMORY.md
 
 COPY src ./src
 
